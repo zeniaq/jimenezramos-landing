@@ -1,16 +1,27 @@
 ---
-console.log("Hi!");
+import Header from '../components/Header.astro';
+import Introduction from '../components/Introduction.astro';
+import Values from '../components/Values.astro';
+import Services from '../components/Services.astro';
+import Features from '../components/Features.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
-
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Jiménez Ramos Producciones Landing Page</h1>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Jimenez Ramos</title>
+    <link rel="stylesheet" href="/src/styles.css"> 
+</head>
+<body class="font-sans antialiased">
+    <Header />
+    <Introduction />
+    <Values />
+    <Services />
+    <Features />
+    <Contact />
+    <Footer />
+</body>
 </html>
